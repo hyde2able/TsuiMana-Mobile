@@ -1,6 +1,0 @@
-framework module Pods_TsuimanaMobile {
-  umbrella header "Pods-TsuimanaMobile-umbrella.h"
-
-  export *
-  module * { export * }
-}
