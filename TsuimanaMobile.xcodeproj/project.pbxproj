@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86A52B9961C2ECB46D714737 /* Pods_TsuimanaMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B31E6E3E013F289EBAD9E73 /* Pods_TsuimanaMobile.framework */; };
 		F2B392991CCCA8CD00235D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392981CCCA8CD00235D9B /* AppDelegate.swift */; };
 		F2B3929B1CCCA8CD00235D9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3929A1CCCA8CD00235D9B /* ViewController.swift */; };
 		F2B3929E1CCCA8CD00235D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B3929C1CCCA8CD00235D9B /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		F2B392A31CCCA8CD00235D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B392A11CCCA8CD00235D9B /* LaunchScreen.storyboard */; };
 		F2B392AE1CCCA8CD00235D9B /* TsuimanaMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392AD1CCCA8CD00235D9B /* TsuimanaMobileTests.swift */; };
 		F2B392B91CCCA8CD00235D9B /* TsuimanaMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392B81CCCA8CD00235D9B /* TsuimanaMobileUITests.swift */; };
+		F2B392C71CCCAD8000235D9B /* Evideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392C61CCCAD8000235D9B /* Evideo.swift */; };
+		F2B392CB1CCCADCB00235D9B /* EvideoTableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392CA1CCCADCB00235D9B /* EvideoTableViewControllers.swift */; };
+		F2B392CE1CCCAE0200235D9B /* WebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392CD1CCCAE0200235D9B /* WebAPIClient.swift */; };
+		F2B392D01CCCB3EC00235D9B /* EvideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */; };
+		F2B392D21CCCB88F00235D9B /* EvideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */; };
+		F2B392D41CCCBF7500235D9B /* Timedtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392D31CCCBF7500235D9B /* Timedtext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C9A8C9C7C64CD75FAAEA50C /* Pods-TsuimanaMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsuimanaMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-TsuimanaMobile/Pods-TsuimanaMobile.release.xcconfig"; sourceTree = "<group>"; };
+		4B31E6E3E013F289EBAD9E73 /* Pods_TsuimanaMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TsuimanaMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6092BF35FFEF88A21879911 /* Pods-TsuimanaMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsuimanaMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TsuimanaMobile/Pods-TsuimanaMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		F2B392951CCCA8CD00235D9B /* TsuimanaMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TsuimanaMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B392981CCCA8CD00235D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B3929A1CCCA8CD00235D9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		F2B392B41CCCA8CD00235D9B /* TsuimanaMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsuimanaMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B392B81CCCA8CD00235D9B /* TsuimanaMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsuimanaMobileUITests.swift; sourceTree = "<group>"; };
 		F2B392BA1CCCA8CD00235D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B392C61CCCAD8000235D9B /* Evideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evideo.swift; sourceTree = "<group>"; };
+		F2B392CA1CCCADCB00235D9B /* EvideoTableViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvideoTableViewControllers.swift; sourceTree = "<group>"; };
+		F2B392CD1CCCAE0200235D9B /* WebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIClient.swift; sourceTree = "<group>"; };
+		F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvideoViewCell.swift; sourceTree = "<group>"; };
+		F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvideoViewController.swift; sourceTree = "<group>"; };
+		F2B392D31CCCBF7500235D9B /* Timedtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timedtext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A52B9961C2ECB46D714737 /* Pods_TsuimanaMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79DE98D0FC5150E9FC74CDD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B31E6E3E013F289EBAD9E73 /* Pods_TsuimanaMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2B3928C1CCCA8CD00235D9B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				F2B392AC1CCCA8CD00235D9B /* TsuimanaMobileTests */,
 				F2B392B71CCCA8CD00235D9B /* TsuimanaMobileUITests */,
 				F2B392961CCCA8CD00235D9B /* Products */,
+				FF67C1E4EFE24FE293B4EFF8 /* Pods */,
+				79DE98D0FC5150E9FC74CDD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +130,9 @@
 				F2B3929F1CCCA8CD00235D9B /* Assets.xcassets */,
 				F2B392A11CCCA8CD00235D9B /* LaunchScreen.storyboard */,
 				F2B392A41CCCA8CD00235D9B /* Info.plist */,
+				F2B392CC1CCCADF500235D9B /* Utilities */,
+				F2B392C91CCCADAF00235D9B /* ViewControllers */,
+				F2B392C81CCCAD9E00235D9B /* Models */,
 			);
 			path = TsuimanaMobile;
 			sourceTree = "<group>";
@@ -125,6 +155,42 @@
 			path = TsuimanaMobileUITests;
 			sourceTree = "<group>";
 		};
+		F2B392C81CCCAD9E00235D9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392C61CCCAD8000235D9B /* Evideo.swift */,
+				F2B392D31CCCBF7500235D9B /* Timedtext.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F2B392C91CCCADAF00235D9B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392CA1CCCADCB00235D9B /* EvideoTableViewControllers.swift */,
+				F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */,
+				F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F2B392CC1CCCADF500235D9B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392CD1CCCAE0200235D9B /* WebAPIClient.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		FF67C1E4EFE24FE293B4EFF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6092BF35FFEF88A21879911 /* Pods-TsuimanaMobile.debug.xcconfig */,
+				3C9A8C9C7C64CD75FAAEA50C /* Pods-TsuimanaMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B392BD1CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobile" */;
 			buildPhases = (
+				C2D8D9B97FDC373640A41D1A /* Check Pods Manifest.lock */,
 				F2B392911CCCA8CD00235D9B /* Sources */,
 				F2B392921CCCA8CD00235D9B /* Frameworks */,
 				F2B392931CCCA8CD00235D9B /* Resources */,
+				B4249C4228AF372470F45D39 /* Embed Pods Frameworks */,
+				AB30211CB128FE0937BEE33D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +320,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB30211CB128FE0937BEE33D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TsuimanaMobile/Pods-TsuimanaMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4249C4228AF372470F45D39 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TsuimanaMobile/Pods-TsuimanaMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2D8D9B97FDC373640A41D1A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2B392911CCCA8CD00235D9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F2B3929B1CCCA8CD00235D9B /* ViewController.swift in Sources */,
+				F2B392D21CCCB88F00235D9B /* EvideoViewController.swift in Sources */,
+				F2B392D41CCCBF7500235D9B /* Timedtext.swift in Sources */,
+				F2B392CE1CCCAE0200235D9B /* WebAPIClient.swift in Sources */,
 				F2B392991CCCA8CD00235D9B /* AppDelegate.swift in Sources */,
+				F2B392CB1CCCADCB00235D9B /* EvideoTableViewControllers.swift in Sources */,
+				F2B392D01CCCB3EC00235D9B /* EvideoViewCell.swift in Sources */,
+				F2B392C71CCCAD8000235D9B /* Evideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +520,7 @@
 		};
 		F2B392BE1CCCA8CD00235D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6092BF35FFEF88A21879911 /* Pods-TsuimanaMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TsuimanaMobile/Info.plist;
@@ -408,6 +532,7 @@
 		};
 		F2B392BF1CCCA8CD00235D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9A8C9C7C64CD75FAAEA50C /* Pods-TsuimanaMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TsuimanaMobile/Info.plist;
@@ -482,6 +607,7 @@
 				F2B392BF1CCCA8CD00235D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B392C01CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +616,7 @@
 				F2B392C21CCCA8CD00235D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B392C31CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +625,7 @@
 				F2B392C51CCCA8CD00235D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
