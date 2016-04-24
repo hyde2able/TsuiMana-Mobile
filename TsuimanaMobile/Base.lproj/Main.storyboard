@@ -146,8 +146,25 @@
                     <view key="view" contentMode="scaleToFill" id="gIC-N2-Xsz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o60-6L-Xtc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="337"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o60-6L-Xtc" secondAttribute="height" multiplier="16:9" id="snu-DO-cQy"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o60-6L-Xtc" firstAttribute="top" secondItem="ah8-0u-pFX" secondAttribute="bottom" id="qmA-Jk-cct"/>
+                            <constraint firstAttribute="trailing" secondItem="o60-6L-Xtc" secondAttribute="trailing" id="qro-d9-FaD"/>
+                            <constraint firstItem="o60-6L-Xtc" firstAttribute="leading" secondItem="gIC-N2-Xsz" secondAttribute="leading" id="y5E-7c-UiB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ytPlayer" destination="o60-6L-Xtc" id="fir-l1-bhu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQ4-KD-gW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
