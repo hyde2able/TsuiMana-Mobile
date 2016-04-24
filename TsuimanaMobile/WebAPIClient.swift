@@ -36,7 +36,6 @@ class WebAPIClient {
             switch result {
             case .Success(let value):
                 let json = JSON(value)
-                //let evideo = Evideo(json: json["response"]["evideo"])
                 var timedtexts = [Timedtext]()
                 json["response"]["timedtexts"].forEach{ timedtexts.append(Timedtext(json: $0.1)) }
                 callback(Result.Success(timedtexts))

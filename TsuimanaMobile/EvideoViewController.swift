@@ -18,12 +18,33 @@ class EvideoViewController: UIViewController {
     private var isLoading = false
     private var evideo: Evideo? = nil
     @IBOutlet private weak var ytPlayer: UIWebView!
+    @IBOutlet weak var timedtextsTable: UITableView!
     
     override func viewDidLoad() {
         evideo = self.contextValue()
         fetchData(true)
         ytPlayerInit()
         print(evideo)
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TimedtextCell", forIndexPath: indexPath) as! TimedtextViewCell
+        cell.timedtext = timedtexts[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.timedtexts.count ?? 0
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //let cell = tableView.cellForRowAtIndexPath(indexPath) as! EvideoViewCell
+        //self.performSegueWithIdentifier("showEvideo", context: cell.evideo)
+        print(indexPath.row)
     }
     
     // MARK: - Privates
@@ -45,6 +66,7 @@ class EvideoViewController: UIViewController {
                 }
                 SVProgressHUD.dismiss()
                 self.isLoading = false
+                self.timedtextsTable.reloadData()
             }
         }
     }
@@ -66,7 +88,7 @@ class EvideoViewController: UIViewController {
     private func ytPlayerInit() {
         guard let evideo = self.evideo, videoId = evideo.videoId else { return }
         self.changeUserAgent()
-        let html: String! = "<div style='position:relative;width:100%;padding:56.25% 0 0 0'><iframe src='http://www.youtube.com/embed/\(videoId)' frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%'></div>"
+        let html: String! = "<div style='position:relative;width:100%;padding:56.25% 0 0 0'><iframe src='http://www.youtube.com/embed/\(videoId)?playsinline=1' frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%'></div>"
         self.ytPlayer.loadHTMLString(html, baseURL: nil)
         self.ytPlayer.scrollView.bounces = false
         self.ytPlayer.allowsInlineMediaPlayback = true

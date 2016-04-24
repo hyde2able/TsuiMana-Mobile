@@ -21,6 +21,7 @@
 		F2B392D01CCCB3EC00235D9B /* EvideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */; };
 		F2B392D21CCCB88F00235D9B /* EvideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */; };
 		F2B392D41CCCBF7500235D9B /* Timedtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392D31CCCBF7500235D9B /* Timedtext.swift */; };
+		F2B392D61CCCDF0200235D9B /* TimedtextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392D51CCCDF0200235D9B /* TimedtextViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvideoViewCell.swift; sourceTree = "<group>"; };
 		F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvideoViewController.swift; sourceTree = "<group>"; };
 		F2B392D31CCCBF7500235D9B /* Timedtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timedtext.swift; sourceTree = "<group>"; };
+		F2B392D51CCCDF0200235D9B /* TimedtextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedtextViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				F2B392CA1CCCADCB00235D9B /* EvideoTableViewControllers.swift */,
 				F2B392CF1CCCB3EC00235D9B /* EvideoViewCell.swift */,
 				F2B392D11CCCB88F00235D9B /* EvideoViewController.swift */,
+				F2B392D51CCCDF0200235D9B /* TimedtextViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				F2B392D41CCCBF7500235D9B /* Timedtext.swift in Sources */,
 				F2B392CE1CCCAE0200235D9B /* WebAPIClient.swift in Sources */,
 				F2B392991CCCA8CD00235D9B /* AppDelegate.swift in Sources */,
+				F2B392D61CCCDF0200235D9B /* TimedtextViewCell.swift in Sources */,
 				F2B392CB1CCCADCB00235D9B /* EvideoTableViewControllers.swift in Sources */,
 				F2B392D01CCCB3EC00235D9B /* EvideoViewCell.swift in Sources */,
 				F2B392C71CCCAD8000235D9B /* Evideo.swift in Sources */,

@@ -11,8 +11,7 @@ import UIKit
 class EvideoViewCell: UITableViewCell {
     
     // MARK: - Outlets
-    
-    @IBOutlet weak var thumbnail: UIImageView!
+    @IBOutlet private weak var thumbnail: UIImageView!
     @IBOutlet private weak var title: UILabel!
     @IBOutlet private weak var word: UILabel!
 
