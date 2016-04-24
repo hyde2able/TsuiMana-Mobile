@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2B392991CCCA8CD00235D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392981CCCA8CD00235D9B /* AppDelegate.swift */; };
+		F2B3929B1CCCA8CD00235D9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3929A1CCCA8CD00235D9B /* ViewController.swift */; };
+		F2B3929E1CCCA8CD00235D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B3929C1CCCA8CD00235D9B /* Main.storyboard */; };
+		F2B392A01CCCA8CD00235D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B3929F1CCCA8CD00235D9B /* Assets.xcassets */; };
+		F2B392A31CCCA8CD00235D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B392A11CCCA8CD00235D9B /* LaunchScreen.storyboard */; };
+		F2B392AE1CCCA8CD00235D9B /* TsuimanaMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392AD1CCCA8CD00235D9B /* TsuimanaMobileTests.swift */; };
+		F2B392B91CCCA8CD00235D9B /* TsuimanaMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B392B81CCCA8CD00235D9B /* TsuimanaMobileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2B392AA1CCCA8CD00235D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B3928D1CCCA8CD00235D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B392941CCCA8CD00235D9B;
+			remoteInfo = TsuimanaMobile;
+		};
+		F2B392B51CCCA8CD00235D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B3928D1CCCA8CD00235D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B392941CCCA8CD00235D9B;
+			remoteInfo = TsuimanaMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2B392951CCCA8CD00235D9B /* TsuimanaMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TsuimanaMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B392981CCCA8CD00235D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2B3929A1CCCA8CD00235D9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2B3929D1CCCA8CD00235D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2B3929F1CCCA8CD00235D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B392A21CCCA8CD00235D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2B392A41CCCA8CD00235D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B392A91CCCA8CD00235D9B /* TsuimanaMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsuimanaMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B392AD1CCCA8CD00235D9B /* TsuimanaMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsuimanaMobileTests.swift; sourceTree = "<group>"; };
+		F2B392AF1CCCA8CD00235D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B392B41CCCA8CD00235D9B /* TsuimanaMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsuimanaMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B392B81CCCA8CD00235D9B /* TsuimanaMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsuimanaMobileUITests.swift; sourceTree = "<group>"; };
+		F2B392BA1CCCA8CD00235D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B392921CCCA8CD00235D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392A61CCCA8CD00235D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392B11CCCA8CD00235D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2B3928C1CCCA8CD00235D9B = {
+			isa = PBXGroup;
+			children = (
+				F2B392971CCCA8CD00235D9B /* TsuimanaMobile */,
+				F2B392AC1CCCA8CD00235D9B /* TsuimanaMobileTests */,
+				F2B392B71CCCA8CD00235D9B /* TsuimanaMobileUITests */,
+				F2B392961CCCA8CD00235D9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2B392961CCCA8CD00235D9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392951CCCA8CD00235D9B /* TsuimanaMobile.app */,
+				F2B392A91CCCA8CD00235D9B /* TsuimanaMobileTests.xctest */,
+				F2B392B41CCCA8CD00235D9B /* TsuimanaMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B392971CCCA8CD00235D9B /* TsuimanaMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392981CCCA8CD00235D9B /* AppDelegate.swift */,
+				F2B3929A1CCCA8CD00235D9B /* ViewController.swift */,
+				F2B3929C1CCCA8CD00235D9B /* Main.storyboard */,
+				F2B3929F1CCCA8CD00235D9B /* Assets.xcassets */,
+				F2B392A11CCCA8CD00235D9B /* LaunchScreen.storyboard */,
+				F2B392A41CCCA8CD00235D9B /* Info.plist */,
+			);
+			path = TsuimanaMobile;
+			sourceTree = "<group>";
+		};
+		F2B392AC1CCCA8CD00235D9B /* TsuimanaMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392AD1CCCA8CD00235D9B /* TsuimanaMobileTests.swift */,
+				F2B392AF1CCCA8CD00235D9B /* Info.plist */,
+			);
+			path = TsuimanaMobileTests;
+			sourceTree = "<group>";
+		};
+		F2B392B71CCCA8CD00235D9B /* TsuimanaMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2B392B81CCCA8CD00235D9B /* TsuimanaMobileUITests.swift */,
+				F2B392BA1CCCA8CD00235D9B /* Info.plist */,
+			);
+			path = TsuimanaMobileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2B392941CCCA8CD00235D9B /* TsuimanaMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B392BD1CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobile" */;
+			buildPhases = (
+				F2B392911CCCA8CD00235D9B /* Sources */,
+				F2B392921CCCA8CD00235D9B /* Frameworks */,
+				F2B392931CCCA8CD00235D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TsuimanaMobile;
+			productName = TsuimanaMobile;
+			productReference = F2B392951CCCA8CD00235D9B /* TsuimanaMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2B392A81CCCA8CD00235D9B /* TsuimanaMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B392C01CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileTests" */;
+			buildPhases = (
+				F2B392A51CCCA8CD00235D9B /* Sources */,
+				F2B392A61CCCA8CD00235D9B /* Frameworks */,
+				F2B392A71CCCA8CD00235D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B392AB1CCCA8CD00235D9B /* PBXTargetDependency */,
+			);
+			name = TsuimanaMobileTests;
+			productName = TsuimanaMobileTests;
+			productReference = F2B392A91CCCA8CD00235D9B /* TsuimanaMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2B392B31CCCA8CD00235D9B /* TsuimanaMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B392C31CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileUITests" */;
+			buildPhases = (
+				F2B392B01CCCA8CD00235D9B /* Sources */,
+				F2B392B11CCCA8CD00235D9B /* Frameworks */,
+				F2B392B21CCCA8CD00235D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B392B61CCCA8CD00235D9B /* PBXTargetDependency */,
+			);
+			name = TsuimanaMobileUITests;
+			productName = TsuimanaMobileUITests;
+			productReference = F2B392B41CCCA8CD00235D9B /* TsuimanaMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2B3928D1CCCA8CD00235D9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = pokohide;
+				TargetAttributes = {
+					F2B392941CCCA8CD00235D9B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F2B392A81CCCA8CD00235D9B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F2B392941CCCA8CD00235D9B;
+					};
+					F2B392B31CCCA8CD00235D9B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F2B392941CCCA8CD00235D9B;
+					};
+				};
+			};
+			buildConfigurationList = F2B392901CCCA8CD00235D9B /* Build configuration list for PBXProject "TsuimanaMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2B3928C1CCCA8CD00235D9B;
+			productRefGroup = F2B392961CCCA8CD00235D9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2B392941CCCA8CD00235D9B /* TsuimanaMobile */,
+				F2B392A81CCCA8CD00235D9B /* TsuimanaMobileTests */,
+				F2B392B31CCCA8CD00235D9B /* TsuimanaMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2B392931CCCA8CD00235D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B392A31CCCA8CD00235D9B /* LaunchScreen.storyboard in Resources */,
+				F2B392A01CCCA8CD00235D9B /* Assets.xcassets in Resources */,
+				F2B3929E1CCCA8CD00235D9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392A71CCCA8CD00235D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392B21CCCA8CD00235D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2B392911CCCA8CD00235D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B3929B1CCCA8CD00235D9B /* ViewController.swift in Sources */,
+				F2B392991CCCA8CD00235D9B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392A51CCCA8CD00235D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B392AE1CCCA8CD00235D9B /* TsuimanaMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B392B01CCCA8CD00235D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B392B91CCCA8CD00235D9B /* TsuimanaMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2B392AB1CCCA8CD00235D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B392941CCCA8CD00235D9B /* TsuimanaMobile */;
+			targetProxy = F2B392AA1CCCA8CD00235D9B /* PBXContainerItemProxy */;
+		};
+		F2B392B61CCCA8CD00235D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B392941CCCA8CD00235D9B /* TsuimanaMobile */;
+			targetProxy = F2B392B51CCCA8CD00235D9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2B3929C1CCCA8CD00235D9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B3929D1CCCA8CD00235D9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2B392A11CCCA8CD00235D9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B392A21CCCA8CD00235D9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2B392BB1CCCA8CD00235D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2B392BC1CCCA8CD00235D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2B392BE1CCCA8CD00235D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TsuimanaMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B392BF1CCCA8CD00235D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TsuimanaMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2B392C11CCCA8CD00235D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TsuimanaMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TsuimanaMobile.app/TsuimanaMobile";
+			};
+			name = Debug;
+		};
+		F2B392C21CCCA8CD00235D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TsuimanaMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TsuimanaMobile.app/TsuimanaMobile";
+			};
+			name = Release;
+		};
+		F2B392C41CCCA8CD00235D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TsuimanaMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TsuimanaMobile;
+			};
+			name = Debug;
+		};
+		F2B392C51CCCA8CD00235D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TsuimanaMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokohide.TsuimanaMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TsuimanaMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2B392901CCCA8CD00235D9B /* Build configuration list for PBXProject "TsuimanaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B392BB1CCCA8CD00235D9B /* Debug */,
+				F2B392BC1CCCA8CD00235D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B392BD1CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B392BE1CCCA8CD00235D9B /* Debug */,
+				F2B392BF1CCCA8CD00235D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2B392C01CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B392C11CCCA8CD00235D9B /* Debug */,
+				F2B392C21CCCA8CD00235D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2B392C31CCCA8CD00235D9B /* Build configuration list for PBXNativeTarget "TsuimanaMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B392C41CCCA8CD00235D9B /* Debug */,
+				F2B392C51CCCA8CD00235D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2B3928D1CCCA8CD00235D9B /* Project object */;
+}
