@@ -61,7 +61,6 @@ class EvideoTableViewController: UIViewController {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! EvideoViewCell
         self.performSegueWithIdentifier("showEvideo", context: cell.evideo)
-        print(indexPath.row)
     }
     
     // MARK: - Privates

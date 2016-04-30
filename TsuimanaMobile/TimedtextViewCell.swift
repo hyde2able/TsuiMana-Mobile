@@ -31,8 +31,8 @@ class TimedtextViewCell: UITableViewCell {
     // MARK: - Private
     private func startToSec(start: Int?) -> String {
         guard let start = start else { return "00:00" }
-        let min = start / 60
-        let sec = start % 60
+        let min = NSString(format: "%02d", start / 60)
+        let sec = NSString(format: "%02d", start % 60)
         return "\(min):\(sec)"
     }
 }

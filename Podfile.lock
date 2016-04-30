@@ -6,6 +6,7 @@ PODS:
   - SegueContext (1.0.0)
   - SVProgressHUD (2.0.3)
   - SwiftyJSON (2.3.2)
+  - XCDYouTubeKit (2.5.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - SegueContext
   - SVProgressHUD
   - SwiftyJSON
+  - XCDYouTubeKit (~> 2.5)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
@@ -20,5 +22,6 @@ SPEC CHECKSUMS:
   SegueContext: 242e57ecdec22cafd5849479b8fa02834078a139
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  XCDYouTubeKit: bb81db52d5539f8f34c4081f344980ef38f4644d
 
 COCOAPODS: 0.39.0

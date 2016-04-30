@@ -8,6 +8,7 @@ target 'TsuimanaMobile' do
   pod 'Alamofire', '~> 3.3'
   pod "SwiftyJSON"
   pod 'SVProgressHUD'
+  pod "XCDYouTubeKit", "~> 2.5"
 end
 
 target 'TsuimanaMobileTests' do

@@ -11,20 +11,60 @@ import Alamofire
 import SwiftyJSON
 import SVProgressHUD
 import SegueContext
+import XCDYouTubeKit
 
-class EvideoViewController: UIViewController {
+class EvideoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var timedtexts = [Timedtext]()
     private var isLoading = false
     private var evideo: Evideo? = nil
-    @IBOutlet private weak var ytPlayer: UIWebView!
-    @IBOutlet weak var timedtextsTable: UITableView!
+    @IBOutlet private weak var timedtextsTable: UITableView!
+    @IBOutlet weak var ytBackView: UIView!
+    
+    private var ytPlayer: XCDYouTubeVideoPlayerViewController? = nil
+    private var ytPlayerPlaying = false
     
     override func viewDidLoad() {
+        
+        self.timedtextsTable.estimatedRowHeight = 60
+        self.timedtextsTable.rowHeight = UITableViewAutomaticDimension
+        
         evideo = self.contextValue()
         fetchData(true)
         ytPlayerInit()
-        print(evideo)
+        
+//        NSNotificationCenter.defaultCenter().addObserver(
+//            self,
+//            selector: "moviePlayerNowPlayingMovieDidChange:",
+//            name: MPMoviePlayerNowPlayingMovieDidChangeNotification,
+//            object: ytPlayer?.moviePlayer)
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(
+//            self,
+//            selector: "moviePlayerLoadStateDidChange:",
+//            name: MPMoviePlayerLoadStateDidChangeNotification,
+//            object: ytPlayer?.moviePlayer)
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(
+//            self,
+//            selector: "moviePlayerPlaybackDidChange:",
+//            name: MPMoviePlayerPlaybackStateDidChangeNotification,
+//            object: ytPlayer?.moviePlayer)
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(
+//            self,
+//            selector: "moviePlayerPlayBackDidFinish:",
+//            name: MPMoviePlayerPlaybackDidFinishNotification,
+//            object: ytPlayer?.moviePlayer)
+    }
+
+    // ページを去るときは動画を停止する
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        if( self.ytPlayerPlaying ) {
+            self.ytPlayer?.moviePlayer.stop()
+        }
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -42,8 +82,6 @@ class EvideoViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //let cell = tableView.cellForRowAtIndexPath(indexPath) as! EvideoViewCell
-        //self.performSegueWithIdentifier("showEvideo", context: cell.evideo)
         print(indexPath.row)
     }
     
@@ -60,46 +98,40 @@ class EvideoViewController: UIViewController {
                 switch result {
                 case .Success(let timedtexts):
                     timedtexts.forEach{ self.timedtexts.append($0) }
-                    print(timedtexts)
+                    //print(timedtexts)
                 case .Failure(let error):
                     print(error)
                 }
                 SVProgressHUD.dismiss()
                 self.isLoading = false
-                self.timedtextsTable.reloadData()
+                self.tableInit()
             }
         }
     }
     
-    func webViewDidFinishLoad(webView: UIWebView!) {
-        print("webViewDidFinishLoad")
-        print(ytPlayer.request?.URL)
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    
+    // MARK: - Private
+    private func tableInit() {
+        self.timedtextsTable.reloadData()
+        self.timedtextsTable.estimatedRowHeight = 60
+        self.timedtextsTable.rowHeight = UITableViewAutomaticDimension
     }
-    
-    func webViewDidStartLoad(webView: UIWebView!) {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        print("webViewDidStartLoad")
-        print(ytPlayer.request?.URL)
-    }
-    
-    
     
     private func ytPlayerInit() {
+//        let originX: CGFloat = self.view.bounds.origin.x
+//        let originY: CGFloat = self.view.bounds.origin.y
+//        let screenWidth: CGFloat = self.view.bounds.width
+//        let screenHeight: CGFloat = screenWidth * 9 / 16
+//        let ytFrame: CGRect = CGRect(x: originX, y: originY, width: screenWidth, height: screenHeight)
         guard let evideo = self.evideo, videoId = evideo.videoId else { return }
-        self.changeUserAgent()
-        let html: String! = "<div style='position:relative;width:100%;padding:56.25% 0 0 0'><iframe src='http://www.youtube.com/embed/\(videoId)?playsinline=1' frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%'></div>"
-        self.ytPlayer.loadHTMLString(html, baseURL: nil)
-        self.ytPlayer.scrollView.bounces = false
-        self.ytPlayer.allowsInlineMediaPlayback = true
+        self.ytPlayer?.videoIdentifier = videoId
+        //self.ytPlayer?.view.frame = ytFrame
+        //self.ytBackView.addSubview((self.ytPlayer?.view)!)
+
+        self.ytPlayer?.moviePlayer.prepareToPlay()
+        self.ytPlayer?.moviePlayer.shouldAutoplay = true
+        self.ytPlayer?.moviePlayer.fullscreen = false
+        self.ytPlayer?.presentInView(self.ytBackView)
+        self.ytPlayer?.moviePlayer.play()
     }
-    
-    private func changeUserAgent(){
-        let userAgent: String! = self.ytPlayer.stringByEvaluatingJavaScriptFromString("navigator.userAgant")
-        let userAgentStr = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36"
-        let customUserAgent: String = userAgent.stringByAppendingString(userAgentStr)
-        let dic: NSDictionary = ["UserAgent": customUserAgent]
-        NSUserDefaults.standardUserDefaults().registerDefaults(dic as! [String : AnyObject])
-    }
-    
 }
