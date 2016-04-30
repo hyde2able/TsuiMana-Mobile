@@ -45,6 +45,21 @@ class WebAPIClient {
         }
     }
     
+    func getRelatedEvideos(id: Int, callback: Result<[Evideo], NSError> -> Void) {
+        let path = "evideos/(id)"
+        getRequest(path) { result in
+            switch result {
+            case .Success(let value):
+                let json = JSON(value)
+                var evideos = [Evideo]()
+                json["response"]["related"].forEach{ evideos.append(Evideo(json: $0.1)) }
+                callback(Result.Success(evideos))
+            case .Failure(let error):
+                callback(Result.Failure(error))
+            }
+        }
+    }
+    
     // MARK: - Privates
     private func getRequest(path: String, parameters: [String: AnyObject], callback: Result<AnyObject, NSError> -> Void) {
         Alamofire.request(.GET, NSURL(string: "\(domain)/\(path)")!, parameters: parameters)

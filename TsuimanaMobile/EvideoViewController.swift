@@ -16,6 +16,7 @@ import XCDYouTubeKit
 class EvideoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var timedtexts = [Timedtext]()
+    var relatedEvideos = [Evideo]()
     private var isLoading = false
     private var evideo: Evideo? = nil
     @IBOutlet private weak var timedtextsTable: UITableView!
@@ -93,6 +94,7 @@ class EvideoViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             if initialize {
                 self.timedtexts = [Timedtext]()
+                self.relatedEvideos = [Evideo]()
             }
             WebAPIClient().getEvideo(id) { result in
                 switch result {
@@ -105,6 +107,15 @@ class EvideoViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 SVProgressHUD.dismiss()
                 self.isLoading = false
                 self.tableInit()
+            }
+            
+            WebAPIClient().getRelatedEvideos(id) { result in
+                switch result {
+                case .Success(let relatedEvideos):
+                    relatedEvideos.forEach{ self.relatedEvideos.append($0) }
+                case .Failure(let error):
+                    print(error)
+                }
             }
         }
     }
