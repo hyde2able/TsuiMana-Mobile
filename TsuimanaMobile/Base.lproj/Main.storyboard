@@ -26,92 +26,39 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-MA-VhA">
                                             <rect key="frame" x="8" y="8" width="184" height="103"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="EpE-MA-VhA" secondAttribute="height" multiplier="109:58" id="Mhl-rD-77F"/>
                                                 <constraint firstAttribute="width" secondItem="EpE-MA-VhA" secondAttribute="height" multiplier="16:9" id="Q1F-AY-h2d"/>
-                                                <constraint firstAttribute="width" secondItem="EpE-MA-VhA" secondAttribute="height" multiplier="16:9" id="gge-MZ-3gD"/>
+                                                <constraint firstAttribute="width" constant="184" id="q57-cz-UhR"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="Mhl-rD-77F"/>
-                                                    <exclude reference="gge-MZ-3gD"/>
-                                                </mask>
-                                            </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="dummytextdummytextdummytextdummytextdummytextdummytextdummytextdummytext" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-we-TwT">
-                                            <rect key="frame" x="207" y="68" width="383" height="41"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warcraft(ウォークラフト) オフィシャルトレイラー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-fL-xnm">
+                                            <rect key="frame" x="202" y="15" width="388" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="fsc-Lv-qRL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-fL-xnm">
-                                            <rect key="frame" x="209" y="8" width="381" height="50"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本でいう番長同士が河原で戦った後に訪れる友情の海外版が見れますよ。マスターチーフってHaloのキャラだっけ。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-we-TwT">
+                                            <rect key="frame" x="202" y="60" width="388" height="46"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="top" constant="8" id="4Jv-Dw-IGB"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="4W1-Jd-KZ5"/>
-                                        <constraint firstAttribute="bottom" secondItem="EpE-MA-VhA" secondAttribute="bottom" constant="8" id="4tC-Je-0dl"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="leading" secondItem="K6n-yZ-qev" secondAttribute="leading" constant="10" id="8qf-1c-59P"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="9E1-MZ-NqV"/>
-                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="topMargin" constant="2" id="9vv-Cv-gcS"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="All-sT-ttM"/>
-                                        <constraint firstAttribute="bottom" secondItem="ygA-we-TwT" secondAttribute="bottom" constant="5" id="BZA-Rk-aYn"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="8" id="D8i-WX-99m"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="jh9-fL-xnm" secondAttribute="trailing" constant="49" id="FA7-PO-VIU"/>
-                                        <constraint firstAttribute="bottom" secondItem="ygA-we-TwT" secondAttribute="bottom" constant="5" id="FkH-n6-MVW"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="leading" secondItem="K6n-yZ-qev" secondAttribute="leading" constant="10" id="In7-Bl-wBc"/>
-                                        <constraint firstAttribute="trailing" secondItem="jh9-fL-xnm" secondAttribute="trailing" constant="10" id="KRA-t9-zqH"/>
-                                        <constraint firstAttribute="trailing" secondItem="jh9-fL-xnm" secondAttribute="trailing" constant="10" id="LKL-1g-gzt"/>
-                                        <constraint firstAttribute="trailing" secondItem="ygA-we-TwT" secondAttribute="trailing" constant="10" id="NtG-RV-1QX"/>
-                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="top" constant="8" id="Q0W-MM-ADy"/>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="top" constant="5" id="Quy-Ol-9fK"/>
-                                        <constraint firstAttribute="trailing" secondItem="ygA-we-TwT" secondAttribute="trailing" constant="10" id="RDW-zu-n9s"/>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="topMargin" constant="5" id="TBk-TV-fD0"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="EpE-MA-VhA" secondAttribute="bottom" constant="2" id="VD4-m3-7aF"/>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="10" id="YH8-SD-8Bj"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="Zrj-77-mO2"/>
-                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="leading" secondItem="K6n-yZ-qev" secondAttribute="leadingMargin" constant="2" id="cvF-g6-s8V"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="trailing" secondItem="K6n-yZ-qev" secondAttribute="trailingMargin" constant="10" id="dwB-xS-fp4"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="fP5-uh-j5E"/>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="28" id="kdy-xg-wnv"/>
-                                        <constraint firstAttribute="bottom" secondItem="ygA-we-TwT" secondAttribute="bottom" constant="10" id="lG5-jA-6UL"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="bottom" secondItem="K6n-yZ-qev" secondAttribute="bottomMargin" constant="10" id="lLG-jA-jba"/>
-                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="leading" secondItem="K6n-yZ-qev" secondAttribute="leading" constant="8" id="lMy-Vm-9E6"/>
-                                        <constraint firstAttribute="trailing" secondItem="ygA-we-TwT" secondAttribute="trailing" constant="10" id="lmB-b9-Ihi"/>
-                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="10" id="ovM-jg-Up5"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="10" id="roU-z5-YNF"/>
-                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="tGC-ij-eeI"/>
+                                        <constraint firstAttribute="bottom" secondItem="ygA-we-TwT" secondAttribute="bottom" constant="13" id="7zI-st-iuX"/>
+                                        <constraint firstItem="ygA-we-TwT" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="10" id="Frz-9j-9VK"/>
+                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="top" constant="8" id="GHO-9U-rCg"/>
+                                        <constraint firstAttribute="bottom" secondItem="EpE-MA-VhA" secondAttribute="bottom" constant="8" id="HjD-LW-lrm"/>
+                                        <constraint firstItem="EpE-MA-VhA" firstAttribute="leading" secondItem="K6n-yZ-qev" secondAttribute="leading" constant="8" id="Mni-hh-dVx"/>
+                                        <constraint firstAttribute="trailing" secondItem="jh9-fL-xnm" secondAttribute="trailing" constant="10" id="aNB-gD-bF2"/>
+                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="leading" secondItem="EpE-MA-VhA" secondAttribute="trailing" constant="10" id="blu-C8-hf2"/>
+                                        <constraint firstAttribute="trailing" secondItem="jh9-fL-xnm" secondAttribute="trailing" constant="10" id="ggy-g9-kVg"/>
+                                        <constraint firstItem="jh9-fL-xnm" firstAttribute="top" secondItem="K6n-yZ-qev" secondAttribute="top" constant="15" id="jbE-rK-Apd"/>
+                                        <constraint firstItem="ygA-we-TwT" firstAttribute="top" secondItem="jh9-fL-xnm" secondAttribute="bottom" constant="10" id="s8u-p3-ecp"/>
+                                        <constraint firstAttribute="trailing" secondItem="ygA-we-TwT" secondAttribute="trailing" constant="10" id="sRz-fh-gHw"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="9vv-Cv-gcS"/>
-                                            <exclude reference="VD4-m3-7aF"/>
-                                            <exclude reference="cvF-g6-s8V"/>
-                                            <exclude reference="FA7-PO-VIU"/>
-                                            <exclude reference="KRA-t9-zqH"/>
-                                            <exclude reference="Quy-Ol-9fK"/>
-                                            <exclude reference="TBk-TV-fD0"/>
-                                            <exclude reference="kdy-xg-wnv"/>
-                                            <exclude reference="ovM-jg-Up5"/>
-                                            <exclude reference="4W1-Jd-KZ5"/>
-                                            <exclude reference="8qf-1c-59P"/>
-                                            <exclude reference="All-sT-ttM"/>
-                                            <exclude reference="BZA-Rk-aYn"/>
-                                            <exclude reference="FkH-n6-MVW"/>
-                                            <exclude reference="In7-Bl-wBc"/>
-                                            <exclude reference="NtG-RV-1QX"/>
-                                            <exclude reference="RDW-zu-n9s"/>
-                                            <exclude reference="Zrj-77-mO2"/>
-                                            <exclude reference="dwB-xS-fp4"/>
-                                            <exclude reference="fP5-uh-j5E"/>
-                                            <exclude reference="lLG-jA-jba"/>
-                                            <exclude reference="roU-z5-YNF"/>
-                                            <exclude reference="tGC-ij-eeI"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="thumbnail" destination="EpE-MA-VhA" id="m6g-9i-RkL"/>
