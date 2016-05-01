@@ -9,7 +9,6 @@ target 'TsuimanaMobile' do
   pod "SwiftyJSON"
   pod 'SVProgressHUD'
   pod 'DZNEmptyDataSet'
-  pod 'SlideMenuControllerSwift'
   pod "XCDYouTubeKit", "~> 2.5"
 end
 
