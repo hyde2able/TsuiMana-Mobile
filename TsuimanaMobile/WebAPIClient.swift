@@ -73,6 +73,5 @@ class WebAPIClient {
                 callback(response.result)
         }
     }
-    
 }
 

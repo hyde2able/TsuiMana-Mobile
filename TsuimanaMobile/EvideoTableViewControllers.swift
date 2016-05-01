@@ -31,7 +31,7 @@ class EvideoTableViewController: UIViewController {
     
     // MARK: - View life cycle
     override func viewDidLoad() {
-        SVProgressHUD.show()
+        self.view.backgroundColor = UIColor(red: CGFloat(238 / 255.0), green: CGFloat(238 / 255.0), blue: CGFloat(238 / 255.0), alpha: 1)
         fetchData(true)
     }
     
@@ -66,6 +66,7 @@ class EvideoTableViewController: UIViewController {
     // MARK: - Privates
     private func fetchData(initialize: Bool) {
         guard let category = category else { return }
+        SVProgressHUD.show()
         if !isLoading {
             isLoading = true
             
@@ -89,5 +90,4 @@ class EvideoTableViewController: UIViewController {
             }
         }
     }
-    
 }
